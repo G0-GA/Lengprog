@@ -20,6 +20,12 @@ class pr001 {
 		//Веществиные
 		float f; //32 bit
 		double dd; //64 bit
+		sn = b;
+		b = (byte)sn;
+		dd = 1.5;
+		in = (int)dd;
+		f = in;
+		System.out.println(in);
 		//символьный
 		char ch; //16 bit
 		ch = 'A';
@@ -28,9 +34,14 @@ class pr001 {
                 	System.out.print(ch++ + " ");
                 System.out.println();	
 		//Логический 
-		boolean bool;
+		boolean bool,bool2 = false;
 	  	bool = true;
-		bool = false;
+                System.out.println(!bool);
+                System.out.println(bool && bool2);
+                System.out.println(bool || bool2);
+                System.out.println(bool ^ bool2);
+                System.out.println("Перевод строки\n" + "Табуляция\t" + "\"Кавычки\' в стракн" + (!bool & (bool2 | bool)));
+		ch = '\'';
 
 
 	} 
